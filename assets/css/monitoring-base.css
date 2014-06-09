@@ -1,7 +1,7 @@
 @CHARSET "ISO-8859-1";
-h2.h2-link a{color:#666666;}
+h2.h2-link a{color:#000000;}
 h2.h2-link a:HOVER{border-bottom: 1px solid #666666;color:#02ACEE;}
-.fl_left p{text-align: justify;}
+.fl_left p{text-align: justify;color:#000000}
 
 ul.nav{list-style: none;margin:0px 0px;padding:0px;font-size: 14px;font-weight: bold;}
 ul.nav li{line-height: 30px;border-right:1px solid #666666}
@@ -12,6 +12,13 @@ ul.nav li.active{
 	border-right:1px solid #FFFFFF;
 	vertical-align: middle;}
 ul.nav li.active a{color:#474B4D;background-color: #FFFFFF;}
+
+/** user home images holder*/
+#homecontent .imgholder img{
+	width: 520px;
+	height: 400px;
+}
+
 
 /*######################################
 	dropdown menu styling
@@ -94,5 +101,9 @@ position: absolute;
 ##############################################################
 start about style
 */
+#about, #about-infrastructure, #about-social,
+	#about-resettlement, #about-livelihood, #about-agriculture,
+	#about-environment, #about-support, #about-summary{width:800px;margin:5px auto;margin-bottom: 30px;padding-left:50px;}
+#about{ padding-left:0px}
 .about p{text-indent: 50px}
-#homecontent .about h2.about-link{border-bottom:none;}
+#container h2.about-link{border-bottom:none;}

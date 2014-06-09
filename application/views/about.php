@@ -45,11 +45,12 @@
   			<p>The livelihood component of the Plan includes capacity building activities, product enhancement and market development to be conducted by the Department of Tourism (DOT), Department of Trade and Industry (DTI) and Technical  Education Skills Development Authority (TESDA) in coordination with the Province of Leyte.  Funding of agriculture and non-agriculture related livelihood projects to include tourism initiatives livelihood projects in agriculture, fishery and tourism also fall under the livelihood component</p>
   			<p>This sub-group- Industry Trade &amp; Services Development is also included in coordination with the DTI, TESDA and the DOT in terms of rehabilitation activities that include skills and entrepreneurial trainings, market development and promotion and market consolidation.</p>
   		</div>
-  		<div id="about-agriculture"></div>
+  		<div id="about-agriculture">
   			<h2 class="about-link" ><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Agriculture &amp; Fishery </a></h2>
   			<p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
             <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
-  		<div id="about-enviroment">
+  		</div>
+  		<div id="about-environment">
   			<h2 class="about-link" ><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Environment</a></h2>
   			<p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
             <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
