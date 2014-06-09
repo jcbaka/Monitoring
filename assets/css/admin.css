@@ -1,26 +1,21 @@
 @CHARSET "ISO-8859-1";
 div.login-container{
-	background: #373737 url("../images/bg.png") 0 0 repeat; 
-	width: 450px;
+	background: rgba(0, 0, 0, 0.24);
+	width: 500px;
 	position: relative;
-	margin: 50px auto;
-	padding: 50px 20px 50px 50px;
-	/* width: 310px; */
-	/* background: white; */
-	border-radius: 3px;
+	margin: 70px auto;
+	margin-bottom:150px;
+	padding:6px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 20px rgba(0, 89, 247, 0.5), 0 1px 2px rgba(5, 31, 54, 0.3);
+	box-shadow: 0 0 20px rgba(0, 89, 247, 0.5), 0 1px 2px rgba(5, 31, 54, 0.3);
+}
+div.login-container .login-form{ 
+	background: #373737 url("../images/bg.png") 0 0 repeat;
 	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-div.login-container:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
+	padding: 50px 0px 50px 30px;
+	border-radius: 3px;
 }
 .login {
   position: relative;
@@ -79,7 +74,8 @@ label {
   font-weight: 100;
   letter-spacing: 1px;
 }
-.forgot-password a{background-color:#373737;}
+.forgot-password:HOVER > a{border-bottom: 1px solid #02ACEE}
+.forgot-password a{background-color:#373737;padding:1px;}
 .login-submit {
   position: absolute;
   top: 12px;

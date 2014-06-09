@@ -24,15 +24,16 @@
 <div class="wrapper col3">
 	<div id="container">
 		<div class="login-container">
+		<div class="login-form">
 			<form method="post" action="index.html" class="login">
 			    <p>
-			      <label for="login">Email:</label>
-			      <input type="text" name="login" id="login" value="name@example.com">
+			      <label for="login">Username:</label>
+			      <input type="text" name="login" id="login">
 			    </p>
 			
 			    <p>
 			      <label for="password">Password:</label>
-			      <input type="password" name="password" id="password" value="4815162342">
+			      <input type="password" name="password" id="password">
 			    </p>
 			
 			    <p class="login-submit">
@@ -41,6 +42,7 @@
 			
 			    <p class="forgot-password"><a href="index.html">Forgot your password?</a></p>
 			 </form>
+			</div>
   		</div>
 	</div>
 </div>

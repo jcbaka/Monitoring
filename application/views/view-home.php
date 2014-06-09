@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="EN" dir="ltr">
 <head profile="http://gmpg.org/xfn/11">
-<title>Monitoring | View</title>
+<title>Monitoring</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="imagetoolbar" content="no" />
 <link rel="shortcut icon" href="<?php echo $this->config->item('base_asset')?>images/icon.png" />
@@ -9,129 +9,94 @@
 <link rel="stylesheet" href="<?php echo $this->config->item('base_asset')?>css/monitoring-base.css" type="text/css" />
 </head>
 <body>
-<!-- ####################################################################################################### -->
 <?php $this->load->view('layouts/header');?>
-<?php $cluster = $_GET['cluster'];	?>
+<!-- #################################################################################### -->
 <div class="wrapper col2">
-  <div id="breadcrumb">
-    <ul>
-      <li class="first">You Are Here</li>
-      <li>&#187;</li>
-      <li><a href="../index.php">Home</a></li>
-      <li>&#187;</li>
-      <li><a href="#">View</a></li>
-      <li>&#187;</li>
-      <?php if($cluster == 'infrastructure'){?>
-      	 <li class="current"><a href="#">Infrastructure</a></li>
-      <?php }else if($cluster == 'livelihood'){?>
-      	 <li class="current"><a href="#">Livelihood</a></li>
-      <?php }else if($cluster == 'social'){?>
-      	 <li class="current"><a href="#">Social Services</a></li>
-      <?php }else if($cluster == 'resettlement'){?>
-     	<li class="current"><a href="#">Resettlement</a></li>
-      <?php }else{?>
-      	<li class="current"><a href="#">Support</a></li>
-      <?php } ?>
-    </ul>
+  <div id="floater">
+	  <div class="floater">
+	     <h2>Aliquatjusto quisque nam</h2>
+	     <p>Orcimagna rhoncus et a nec antesque sed temportor pellus nibh conseque. Accumstsemper wisi pretium feugiat non ut eleifendrerisque at et condisse sce. Iaculumorci congue nam mollis odio id cras orci vestique euisquet at. Donecconsectetus lacilis ac pellus nam nibh curabitur sed anterdum nectetus adipis. Pretiummagnisse antes nunc pretium convallis tincidunt non at rutrumt.</p>
+	  </div>
+	  <div id="featured_slide">
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/450x300.gif" alt="" /></a></div>
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/sample1.jpg" alt="" /></a></div>
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/sample2.png" alt="" /></a></div>
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/sample3.jpg" alt="" /></a></div>
+	  </div>
   </div>
 </div>
-<!-- ####################################################################################################### -->
+<!-- ################################################################################### -->
 <div class="wrapper col3">
-  <div id="container">
-  	  <div id="column1">
-      <div class="subnav">
-      <!--   <h2>Clusters</h2> -->
-        <ul class="nav">
-          <li style="padding:20px 0px;" class="disable"><h2>Clusters</h2></li> 
-          <li class="active"><a href="#">Infrastructure</a></li>
-          <li><a href="#">Livelihood</a></li>
-          <li><a href="#">Social Services </a></li>
-          <li><a href="#">Resettlement</a></li>
-          <li><a href="#">Support</a></li>
-           <li class="disable" style="padding:20px 0px;"></li> 
-        </ul>
-      </div>
-    </div>
-    <div id="content">
-      	<?php 
-      		
-      		if($cluster == 'infrastructure'){?>
-      			 <h2>Infrastructure</h2>
-      		<?php }else if($cluster == 'livelihood'){?>
-      			  <h2>Livelihood</h2>
-      		<?php }else if($cluster == 'social'){?>
-      			  <h2>Social Services</h2>
-      		<?php }else if($cluster == 'resettlement'){?>
-      			 <h2>Resettlement</h2>
-      		<?php }else{?>
-      			  <h2>Support</h2>
-      		<?php }
-      	?>
-      <table summary="Summary Here" cellpadding="0" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-            <th>Header 4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="light">
-            <td>Value 1</td>
-            <td>Value 2</td>
-            <td>Value 3</td>
-            <td>Value 4</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 5</td>
-            <td>Value 6</td>
-            <td>Value 7</td>
-            <td>Value 8</td>
-          </tr>
-          <tr class="light">
-            <td>Value 9</td>
-            <td>Value 10</td>
-            <td>Value 11</td>
-            <td>Value 12</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 13</td>
-            <td>Value 14</td>
-            <td>Value 15</td>
-            <td>Value 16</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="column">
-      <div class="subnav">
-        <h2>Archives</h2>
+  <div id="homecontent">
+    <div class="fl_left">
         <ul>
-          <li><a href="#">2015</a></li>
-          <li><a href="#">2014</a>
-            <ul>
-              <li><a href="#">April</a></li>
-              <li><a href="#">May</a></li>
-              <li><a href="#">June</a>
-              	<ul>
-              		<li><a href="#">Images</a></li>
-              		<li><a href="#">Files</a></li>
-              	</ul>
-              </li>
-              <li><a href="#">July</a></li>
-            </ul>
+          <li>
+            <h2 class="h2-link adjusted" ><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=infrastructure">Infrastructure</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p id="wrapper">The infrastructure programs comprises  the rehabilitation and reconstruction of the provincially-funded and operated structures/establishments 
+            in the Province, roads and bridges, public buildings, flood mitigation structures and drainage system and water management system.  </p>
+           	<p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-infrastructure">Continue Reading &raquo;</a></p>
           </li>
-          <li><a href="#">2013</a></li>
+          <li>
+             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=social">Social Services</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>The social services program includes the repair/reconstruction of school buildings in the municipalities of the Province of Leyte, 
+            the district and community hospitals, Rural Health Units, Brgy. Health Centers/Stations, other health facilities. the provincial jail 
+            and sub-jails, and the procurement of...</p>
+            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-social">Continue Reading &raquo;</a></p>
+          </li>
+           <li>
+             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=resettlement">Resettlement</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>The total housing requirement is 16,351 units for site relocation and implementation in CY 2014 as reflected in Table 6.  The total project cost including land acquisition at 
+            P10,000.00/unit; land development at P55,000.00/unit; community facilities at P10,0000.00; construction at ...</p>
+           <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-resettlement">Continue Reading &raquo;</a></p>
+          </li>
+           <li class="last">
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=livelihood">Livelihood, Industry Trade &amp; Services Development </a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>The livelihood component of the Plan includes capacity building activities, product enhancement and market development to be conducted by the Department of Tourism (DOT), Department of Trade and Industry (DTI) and Technical  Education Skills Development Authority (TESDA) in ...</p>
+           <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-livelihood">Continue Reading &raquo;</a></p>
+          </li>
+           <li>
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Agriculture &amp; Fishery </a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+            <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
+            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-agriculture">Continue Reading &raquo;</a></p>
+          </li>
+           <li>
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Environment</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+            <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
+            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-environment">Continue Reading &raquo;</a></p>
+          </li>
+           <li>
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Program Support</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+            <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
+            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-support">Continue Reading &raquo;</a></p>
+          </li>
+           <li class="last">
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Summary of Reports</a></h2>
+            <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/240x130.gif" alt="" /></div>
+            <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+            <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
+            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about#about-summary">Continue Reading &raquo;</a></p>
+          </li>
         </ul>
-      </div>
+        <br class="clear" />
     </div>
-    <div class="clear"></div>
+    <br class="clear" />
   </div>
 </div>
 <!-- ####################################################################################################### -->
 <?php $this->load->view('layouts/footer');?>
 <script type="text/javascript" src="<?php echo $this->config->item('base_asset')?>js/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="<?php echo $this->config->item('base_asset')?>/js/monitoring.js"></script>
+<script type="text/javascript" src="<?php echo $this->config->item('base_asset')?>js/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="<?php echo $this->config->item('base_asset')?>js/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->config->item('base_asset')?>js/jquery.cycle.setup.js"></script>
 </body>
 </html>
