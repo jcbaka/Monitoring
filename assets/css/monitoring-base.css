@@ -15,8 +15,8 @@ ul.nav li.active a{color:#474B4D;background-color: #FFFFFF;}
 
 /** user home images holder*/
 #homecontent .imgholder img{
-	width: 520px;
-	height: 400px;
+	width: 340px;
+	height: 250px;
 }
 
 
@@ -101,9 +101,25 @@ position: absolute;
 ##############################################################
 start about style
 */
-#about, #about-infrastructure, #about-social,
+#about-infrastructure, #about-social,
 	#about-resettlement, #about-livelihood, #about-agriculture,
-	#about-environment, #about-support, #about-summary{width:800px;margin:5px auto;margin-bottom: 30px;padding-left:50px;}
-#about{ padding-left:0px}
-.about p{text-indent: 50px}
+	#about-environment, #about-support, #about-summary, #about-addendum{width:660px;margin:5px auto;margin-bottom: 30px;}
+#about{width:800px;margin:5px auto;margin-bottom: 15px;padding-bottom:15px;border-bottom:1px double #999999;}
+#about p{padding:0px 20px;}
+.about p{text-indent: 50px;text-align: justify;}
 #container h2.about-link{border-bottom:none;}
+#container h2.about-link:HOVER > a{border-bottom:1px solid black;}
+#about-infrastructure img, #about-social img,
+	#about-resettlement img, #about-livelihood img, #about-agriculture img,
+	#about-environment img, #about-support img, #about-summary img, #about-addendum img{
+	padding: 4px;
+	border: 1px solid #999999;
+	width:650px;
+	height: 450px;}
+#container p.readmore{
+	display:block;
+	padding:5px;
+	line-height:normal;
+	font-weight:bold;
+	text-indent: 0px
+}
