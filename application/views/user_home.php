@@ -18,8 +18,9 @@
 	  </div>
 	  <div id="featured_slide">
 	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/MAP2.jpg" alt="" /></a></div>
-	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/sample1.jpg" alt="" /></a></div>
-	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/sample3.jpg" alt="" /></a></div>
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/ECONOMICS.jpg" alt="" /></a></div>
+	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/slide1.png" alt="" /></a></div>
+	     <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/slide2.png" alt="" /></a></div>
 	    <div class="featured_box"><a href="#"><img src="<?php echo $this->config->item('base_asset')?>images/450x300.gif" alt="" /></a></div>
 	  </div>
   </div>
@@ -65,14 +66,14 @@
            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about?about=3">Continue Reading &raquo;</a></p>
           </li>
           <li>
-             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Agriculture &amp; Fishery </a></h2>
+             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=agriculture">Agriculture &amp; Fishery </a></h2>
             <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/agriculture.png" alt="" /></div>
             <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
             <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
            <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about?about=4">Continue Reading &raquo;</a></p>
           </li>
            <li class="last">
-             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Environment</a></h2>
+             <h2 class="h2-link adjusted"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=environment">Environment</a></h2>
             <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/environment.png" alt="" /></div>
             <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
             <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>
@@ -88,7 +89,7 @@
             <p class="readmore"><a href="<?php echo $this->config->item('base_url')?>welcome/about?about=6">Continue Reading &raquo;</a></p>
           </li>
           <li>
-             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Summary of Reports</a></h2>
+             <h2 class="h2-link"><a href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=summary">Summary of Reports</a></h2>
             <div class="imgholder"><img src="<?php echo $this->config->item('base_asset')?>images/summary.png" alt="" /></div>
             <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
             <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et feugiat. Adipisciniap ellentum leo ut consequam.</p>

@@ -12,11 +12,11 @@
 	    	<a tabindex="-1" href="#">View </a>
 		    <ul class="dropdown-menu">
 		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=infrastructure">Infrastructure</a></li>
-		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=livelihood">Livelihood </a></li>
 		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=social">Social Services</a></li>
+		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=resettlement">Resettlement</a></li>
+		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=livelihood">Livelihood </a></li>
 		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=agriculture">Agriculture &amp; Fishery</a></li>
 	    		<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=environment">Environment</a></li>
-		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=resettlement">Resettlement</a></li>
 		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>welcome/view?cluster=support">Program Support</a></li>
 		    </ul>
 	 	</li>

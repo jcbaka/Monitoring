@@ -218,8 +218,9 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	padding:0px 10px;
 	/* border-left:1px solid #666666; */
 	border-right:1px solid #666666;
-	width:715px;
-	min-height: 425px;
+	/* width:715px; */
+	width:900px;
+	min-height: 500px;
 }
 
 /* ------Comments-----*/

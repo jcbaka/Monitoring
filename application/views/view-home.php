@@ -11,7 +11,6 @@
 <body>
 <!-- ####################################################################################################### -->
 <?php $this->load->view('layouts/header');?>
-<?php $cluster = $_GET['cluster'];	?>
 <div class="wrapper col2">
   <div id="breadcrumb">
     <ul>
@@ -21,23 +20,8 @@
       <li>&#187;</li>
       <li><a href="#">View</a></li>
       <li>&#187;</li>
-      <?php if($cluster == 'infrastructure'){?>
-      	 <li class="current"><a href="#">Infrastructure</a></li>
-      <?php }else if($cluster == 'social'){?>
-      	 <li class="current"><a href="#">Social Services</a></li>
-      <?php }else if($cluster == 'resettlement'){?>
-     	<li class="current"><a href="#">Resettlement</a></li>
-      <?php }else if($cluster == 'livelihood'){?>
-      	 <li class="current"><a href="#">Livelihood</a></li>
-      <?php }else if($cluster == 'agriculture'){?>
-     	<li class="current"><a href="#">Agriculture &amp; Fishery </a></li>
-      <?php }else if($cluster == 'environment'){?>
-     	<li class="current"><a href="#">Environment</a></li>
-      <?php }else if($cluster == 'support'){?>
-     	<li class="current"><a href="#">Program Support</a></li>
-      <?php }else{?>
-      	<li class="current"><a href="#">Summary of Reports</a></li>
-      <?php } ?>
+      <?php echo $path;?>
+      
     </ul>
   </div>
 </div>
@@ -49,75 +33,61 @@
       <!--   <h2>Clusters</h2> -->
         <ul class="nav">
           <li style="padding:20px 0px;" class="disable"><h2>Clusters</h2></li> 
-          <li class="active"><a href="#">Infrastructure</a></li>
-          <li><a href="#">Social Services </a></li>
-          <li><a href="#">Resettlement</a></li>
-          <li><a href="#">Livelihood, Industry Trade &amp; Services Dev't </a></li>
-          <li><a href="#">Agriculture &amp; Fishery </a></li>
-          <li><a href="#">Environment</a></li>
-          <li><a href="#">Support Program</a></li>
-          <li><a href="#">Summary of Reports</a></li>
+          <li class="main active"><a>Infrastructure &emsp; &emsp;&emsp; &raquo;</a>
+          	<ul class="dropdown-subgroup">
+		    	<li><a tabindex="-1" href="<?php echo $this->config->item('base_url')?>view/infra?subgroup=infra_1">Roads,Bridges and Other Infrastructure</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=flood">Flood Mitigation and Drainage System</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=water">Water Management System</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=multipurpose">Multi-Purpose Buildings and Other Infrastructures</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=other">Other Public Buildings Provincial Offices and Other</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=structures">Structures</a></li>
+		    	<li><a tabindex="-1" href="/Monitoring/user/view-home.php?cluster=infrastructure&subgroup=tourism">Tourism Infrastructure</a></li>
+	   		</ul>
+          </li>
+          <li class="main"><a href="#">Social Services  &emsp;&emsp;&emsp;&raquo;</a>
+          	<ul class="dropdown-subgroup" >
+		    	<li><a tabindex="-1" href="#">School Buildings</a></li>
+		    	<li><a tabindex="-1" href="#">PARR Format School JICA</a></li>
+		    	<li><a tabindex="-1" href="#">Education (Day Care Center)</a></li>
+		    	<li><a tabindex="-1" href="#">Repair Rehabilitation of Other Public Buildings</a></li>
+		    	<li><a tabindex="-1" href="#">Hospital Equipment</a></li>
+	   		</ul>
+          </li>
+          <li class="main"><a href="#">Resettlement  &emsp; &emsp; &emsp;&nbsp; &raquo;</a>
+          	<ul class="dropdown-subgroup" >
+		    	<li><a tabindex="-1" href="#">NHA Computation</a></li>
+		    	<li><a tabindex="-1" href="#">Private Donors</a></li>
+		    	<li><a tabindex="-1" href="#">Shelter Kits</a></li>
+	   		</ul>
+          </li>
+          <li class="main"><a href="#">Livelihood &emsp; &emsp; &emsp; &emsp;&emsp;&raquo;</a>
+          	<ul class="dropdown-subgroup" >
+		    	<li><a tabindex="-1" href="#">Tourism</a></li>
+		    	<li><a tabindex="-1" href="#">Industry Trade &amp; Services Dev't. </a></li>
+		    	<li><a tabindex="-1" href="#">TESDA-Implemented Ray Program as of 05-13-2014</a></li>
+		    	<li><a tabindex="-1" href="#">Livelihood Programs Education 2Ps</a></li>
+	   		</ul>
+          </li>
+          <li class="main"><a href="#">Agriculture &amp; Fishery &raquo;</a>
+          	<ul class="dropdown-subgroup" >
+		    	<li><a tabindex="-1" href="#">A&amp;F </a></li>
+		    	<li><a tabindex="-1" href="#">A&amp;F Priority 1</a></li>
+		    	<li><a tabindex="-1" href="#">Fisheries</a></li>
+		    	<li><a tabindex="-1" href="#">Livelihood</a></li>
+	   		</ul>
+          </li>
+          <li class="main"><a href="#">Environment </a></li>
+          <li class="main"><a href="#">Support Program </a></li>
+          <li class="main"><a href="#">Summary of Reports</a></li>
            <li class="disable" style="padding:20px 0px;"></li> 
         </ul>
       </div>
     </div>
     <div id="content">
-      		<?php if($cluster == 'infrastructure'){?>
-      			 <h2>Infrastructure</h2>
-      		<?php }else if($cluster == 'social'){?>
-      			  <h2>Social Services</h2>
-      		<?php }else if($cluster == 'resettlement'){?>
-      			 <h2>Resettlement</h2>
-      		<?php }else if($cluster == 'livelihood'){?>
-      			  <h2>Livelihood, Industry Trade &amp; Services </h2>
-      		<?php }else if($cluster == 'agriculture'){?>
-      			 <h2>Agriculture &amp; Fishery </h2>
-      		<?php }else if($cluster == 'environment'){?>
-      			 <h2>Environment</h2>
-      		<?php }else if($cluster == 'support'){?>
-      			 <h2>Program Support</h2>
-      		<?php }else{?>
-      			  <h2>Summary of Reports</h2>
-      		<?php }
-      	?>
-      <table summary="Summary Here" cellpadding="0" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-            <th>Header 4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="light">
-            <td>Value 1</td>
-            <td>Value 2</td>
-            <td>Value 3</td>
-            <td>Value 4</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 5</td>
-            <td>Value 6</td>
-            <td>Value 7</td>
-            <td>Value 8</td>
-          </tr>
-          <tr class="light">
-            <td>Value 9</td>
-            <td>Value 10</td>
-            <td>Value 11</td>
-            <td>Value 12</td>
-          </tr>
-          <tr class="dark">
-            <td>Value 13</td>
-            <td>Value 14</td>
-            <td>Value 15</td>
-            <td>Value 16</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2><?php echo $title;?></h2>
+      <?php $this->load->view($content);?>
     </div>
-    <div id="column">
+<!--     <div id="column">
       <div class="subnav">
         <h2>Archives</h2>
         <ul>
@@ -138,7 +108,7 @@
           <li><a href="#">2013</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="clear"></div>
   </div>
 </div>

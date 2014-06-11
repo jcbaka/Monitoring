@@ -13,9 +13,10 @@ table{
 	vertical-align:top;
 	margin-bottom:15px;
 	border:1px solid #CCCCCC;
+	color: #000000;
 	}
 
-table thead th{
+table thead th, table tfoot td{
 	color:#FFFFFF;
 	background-color:#666666;
 	border:1px solid #CCCCCC;
@@ -23,6 +24,7 @@ table thead th{
 	text-align:center;
 	table-layout:auto;
 	vertical-align:middle;
+	font-weight: bold;
 	}
 
 table tbody td{
@@ -38,11 +40,15 @@ table thead th, table tbody td{
 	}
 
 table tbody tr.light{
-	color:#666666;
 	background-color:#F7F7F7;
 	}
 
 table tbody tr.dark{
-	color:#666666;
 	background-color:#E8E8E8;
 	}
+
+table.summary td{padding:8px;text-align: right;}
+table.summary tbody td:FIRST-CHILD{text-align: left;}
+table.summary tbody tr:HOVER {
+	background-color:#88C1E0;
+}

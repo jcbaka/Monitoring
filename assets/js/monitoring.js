@@ -11,29 +11,35 @@ $(document).ready(function(){
 	$("#topnav li").removeClass('active');
 	$("#topnav li").eq(1).addClass('active');
 	$("#topnav li a").eq(1).attr('href','#');
-		
-	
 	
 	/* side menu */
 	var cluster = $("#breadcrumb li.current a").html();
 	if(cluster == 'Infrastructure'){
-		$(".nav li").removeClass('active');
-		$(".nav li").eq(1).addClass('active');
-	}
-	else if(cluster == 'Livelihood'){
-		$(".nav li").removeClass('active');
-		$(".nav li").eq(2).addClass('active');
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(0).addClass('active');
 	}
 	else if(cluster == 'Social Services'){
-		$(".nav li").removeClass('active');
-		$(".nav li").eq(3).addClass('active');
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(1).addClass('active');
 	}
 	else if(cluster == 'Resettlement'){
-		$(".nav li").removeClass('active');
-		$(".nav li").eq(4).addClass('active');
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(2).addClass('active');
 	}
-	else if(cluster == 'Support'){
-		$(".nav li").removeClass('active');
-		$(".nav li").eq(5).addClass('active');
+	else if(cluster == 'Livelihood'){
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(3).addClass('active');
+	}
+	else if(cluster == 'Agriculture &amp; Fishery'){
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(4).addClass('active');
+	}
+	else if(cluster == 'Environment'){
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(5).addClass('active');
+	}
+	else if(cluster == 'Program Support'){
+		$(".nav li.main").removeClass('active');
+		$(".nav li.main").eq(6).addClass('active');
 	}
 });
